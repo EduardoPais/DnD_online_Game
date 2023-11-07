@@ -3,9 +3,19 @@ html {
 }
 body {
     background-color: #f5e1c6; 
-    font-family: 'Georgia', serif; 
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+    margin: 0;
 } 
 label{
+    font-family: 'Old English Text MT', Times, serif;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 0;
     font-family: 'Old English Text MT', Times, serif;
 }
 .nav {
@@ -13,6 +23,7 @@ label{
     position: fixed;
     background-color: #442b0f; 
     left: 50%;
+    top: 2%;
     transform: translateX(-50%);
     border-radius: 10px;
 }
@@ -35,43 +46,43 @@ a:hover {
     border-bottom: 2px solid #f5e1c6;
 }
 .medieval-container {
+    justify-content: center; /* Center content horizontally */
+    margin-top: 4%;
     background-color: #d0b070;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px;
-    margin: 20px auto;
+    width: 30%;
 }
-
 .medieval-form {
     text-align: left;
 }
-
 .medieval-heading {
     color: #3d2912;
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
 }
-
 .medieval-form label {
     color: #3d2912;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-}
+    margin-left: 30%;
 
+}
 .medieval-form input {
     width: calc(100% - 20px);
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
     border: 1px solid #3d2912;
     border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 10px;
+    margin-left: 5%;
+    text-align: center;  
 }
-
 .medieval-btn {
     background-color: #3d2912;
     color: #f3e8d0;
@@ -81,8 +92,17 @@ a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    transform: translate(165%,0);
 }
-
 .medieval-btn:hover {
     background-color: #523920;
+}
+.skills-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 47%; /* Adjust as needed */
+}
+.skills-column label,
+.skills-column input {
+    width: 100%;
 }

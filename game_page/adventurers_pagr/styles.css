@@ -1,0 +1,84 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5e1c6;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+    margin: 0;
+}
+
+label {
+    font-family: 'Old English Text MT', Times, serif;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Old English Text MT', Times, serif;
+}
+
+nav {
+    font-family: 'Old English Text MT', Times, serif;
+    position: fixed;
+    background-color: #442b0f;
+    left: 50%;
+    top: 2%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 1vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    color: #f5e1c6;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    border-bottom: 2px solid #f5e1c6;
+}
+
+.medieval-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 80px; /* Adjust top margin as needed */
+    margin-bottom: 20px; /* Adjust bottom margin as needed */
+}
+
+#map-container,
+#chat-container {
+    flex: 1;
+}
+canvas{
+    width: 70vw;
+    height: 85vh;
+}
+textarea {
+    border-radius: 10px;
+    width: 20vw;
+    height: 85vh;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #3d2912;
+    box-sizing: border-box;
+}
+
+
